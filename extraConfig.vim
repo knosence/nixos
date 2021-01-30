@@ -444,9 +444,9 @@ vnoremap . :norm.<cr>
 " }}}
 
 " kj = <esc> {{{
-inoremap kj <esc>
-cnoremap kj <esc>
-vnoremap kj <esc>
+inoremap jk <esc>
+cnoremap jk <esc>
+vnoremap jk <esc>
 " }}}
 
 " Navigation {{{
@@ -475,7 +475,7 @@ nnoremap <leader>9 Orequire'pry';binding.pry<esc>
 
 nnoremap <leader><space> :noh<cr>
 
-cnoremap w!! %!sudo tee > /dev/null %
+cnoremap W %!sudo tee > /dev/null %
 
 " THANKS NEOVIM
 nnoremap <bs> <C-w>h
