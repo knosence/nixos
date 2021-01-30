@@ -89,7 +89,6 @@
     neovim
     spacevim
     emacs
-    emacs26Packages.doom
     rustup
     clang
     nodejs

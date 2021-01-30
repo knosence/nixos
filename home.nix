@@ -1,7 +1,9 @@
 { config, pkgs, libs, ... }:
 
 {
-  home.packages = with pkgs; [
+
+
+  home.packages = [
     pkgs.git
     pkgs.zoom-us
     pkgs.ark
@@ -15,7 +17,7 @@
     
   ];
 
-  # Let Home Manager install and manage itself.
+  
   programs.home-manager.enable = true;
   programs.bat.enable = true;
   programs.git = {
@@ -88,7 +90,7 @@
       # logoutExtra
       # localVariables
     };
-
+  
   programs.neovim = {
     enable = true;
     vimAlias = true;
