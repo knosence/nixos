@@ -1,4 +1,4 @@
-{ config, pkgs, libs, ... }:
+{ config, pkgs, libs, stdenv, ... }:
 
 {
 
@@ -133,6 +133,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  imports = [
+    ./emacs.nix
+  ];
   
 
   # This value determines the Home Manager release that your
@@ -145,3 +148,4 @@
   # changes in each release.
   home.stateVersion = "21.03";
 }
+
