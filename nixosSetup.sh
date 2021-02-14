@@ -8,7 +8,7 @@ parted $drive -- mklabel gpt
 parted $drive -- mkpart primary 512MiB -16GiB
 parted $drive -- mkpart primary linux-swap -16GiB 100%
 parted $drive -- mkpart ESP fat32 1MiB 512MiB
-sudo drive -- set 3 esp on
+parted $drive -- set 3 esp on
 
 echo ">>> FORMATING DRIVES"
 mkfs.ext4 -L nixos ${drive}1
@@ -28,6 +28,7 @@ cp /home/nixos/nixos/configuration.nix /mnt/etc/nixos/configuration.nix
 read -p ">>> OPENING CONFIG IN VIM"
 vim /mnt/etc/nixos/configuration.nix
 
+echo "make sure boot is flaged as such"
 read -p ">>> SETUP IS COMPLETE, HIT ENTER TO CONTINUE"
 
 nixos-install
