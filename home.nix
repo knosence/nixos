@@ -14,6 +14,11 @@
     pkgs.etcher
     pkgs.docker
     pkgs.vscode
+    pkgs.ledger-live-desktop
+    pkgs.qemu_kvm
+    pkgs.virt-manager-qt
+    pkgs.joplin-desktop
+    pkgs.cura_stable
     
   ];
 
