@@ -19,6 +19,7 @@
     pkgs.virt-manager-qt
     pkgs.joplin-desktop
     pkgs.cura_stable
+    pkgs.dropbox
     
   ];
 
