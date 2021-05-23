@@ -20,6 +20,7 @@
     pkgs.joplin-desktop
     pkgs.cura_stable
     pkgs.dropbox
+    pkgs.tdesktop
     
   ];
 
